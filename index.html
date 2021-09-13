@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>marketronic</title>
+        
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+
+        <header> 
+            <p class="legnd">MARKET<span id="market">RONIC</span></p>
+        
+            <input type="search" class="input" placeholder="Search here.....">
+
+            <button class="buton" id="search">SEARCH</button>
+
+            <div class="navbar">
+
+            <!--MODAL STARTS HERE-->
+                <p class="tooltip hove" id="myBtn">&#128722Cart<sup id="cartCounter" class="noneCount">0</sup><span class="tooltiptext">items in cart</span></p>
+
+            </div>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div style="background: white;" id="myTab">
+                        <span class="close">&times;</span>
+                        <!-- <p>some text in the modal.....</p> -->
+                        <table id="cartItems" style="width: 100%;">
+                            <caption>ITEMS ADDED TO CART:</caption>
+                            <tr id="headed">
+                                <th>item</th>
+                                <th>quantity</th>
+                                <th>price (&#8358;)</th>
+                                <th>sub-total (&#8358;)</th>
+                            </tr>
+                            <!-- <div class="rowl" id="rower"></div> -->
+                        </table>
+                        <div id="totally">
+                            <div id="pTotal" class="hideTotal">TOTAL (&#8358;) :</div>
+                            <div id="total" class="hideTotal">0</div>
+                        </div>
+                        <button class="none_cart_buton" id="check_out_buton">Check out</button>
+                    </div>
+                    <div class="end_process" id="end">
+                        <p>THANK YOU FOR SHOPPING WITH US!</p> <br>
+                        <p style="margin-left: 12%;">SEE YOU SOON!</p> <br>
+                        <button class="end_buton" style="margin-left: 14%;">End process</button> <br>
+                    </div>
+                </div>
+            </div>
+
+            <!-- modal end -->
+
+            <div class="navbar dropdown">
+
+                <p onclick="myFunction()" class="tooltip hove dropbtn">&#9733Favorites<span class="tooltiptext">favorite items</span></p>
+                <ul id="myDropdown" class="dropdown-content">
+                    <h4 class="favBar">Favorites bar:</h4>
+                </ul>
+
+            </div>
+        
+        </header>
+
+        <div class="cardParent">
+            <div class="card">
+                <p class="cardTitle">Apple</p>
+
+                <div class="favStar tooltip">&#9734<span class="tooltiptext">pin to favorites</span></div>
+                <div class="none tooltip">&#9733<span class="tooltiptext">pinned</span></div>
+                
+
+                <img src="Apple.jpg" alt="picture of an apple" class="myImage apple">
+
+                <h4>Description:</h4>
+
+                <p class="para">An apple is a very sweet fruit usually grown outside the shores of Nigeria.</p>
+
+                <button class="buton smWidth">Add to Cart</button>
+                <button class="noner smWidth">Remove</button>
+                
+                <p class="money tooltip" price="100">&#8358;100<span class="tooltiptext">Price</span></p>
+
+            </div>
+
+            <div class="card">
+                <p class="cardTitle">Orange</p>
+
+                <div class="favStar tooltip">&#9734<span class="tooltiptext">pin to favorites</span></div>
+                <div class="none tooltip">&#9733<span class="tooltiptext">pinned</span></div>
+
+                <img src="orange.jpg" alt="picture of an orange" class="myImage" id="orange">
+
+                <h4>Description:</h4>
+
+                <p class="para">An orange is a very sweet fruit usually grown within the shores of Nigeria.</p>
+
+                <button class="buton smWidth">Add to Cart</button>
+                <button class="noner smWidth">Remove</button>
+
+                <p class="money tooltip" price="120">&#8358;120<span class="tooltiptext">Price</span></p>
+
+            </div>
+
+            <div class= "card">
+                <p class="cardTitle">Pineapple</p>
+                <div class="favStar tooltip">&#9734<span class="tooltiptext">pin to favorites</span></div>
+                <div class="none tooltip">&#9733<span class="tooltiptext">pinned</span></div>
+                 
+                <img src="Pineapple_2.jpg" alt="picture of a pineapple" class="myImage">
+
+                <h4>Description:</h4>
+
+                <p class="para">A Pineapple is a very sweet fruit usually grown within and outside the shores of Nigeria.</p>
+
+                <button class="buton smWidth">Add to Cart</button>
+                <button class="noner smWidth">Remove</button>
+
+                <p class="money tooltip" price="250">&#8358;250<span class="tooltiptext">Price</span></p>
+
+            </div>
+
+            <div class="card">
+                <p class="cardTitle">Watermelon</p>
+
+                <div class="favStar tooltip">&#9734<span class="tooltiptext">pin to favorites</span></div>
+                <div class="none tooltip">&#9733<span class="tooltiptext">pinned</span></div>
+                <img src="melon.jpg" alt="picture of a Watermelon" class="myImage apple">
+
+                <h4>Description:</h4>
+
+                <p class="para">A Watermelon is a very sweet fruit usually grown within and outside the shores of Nigeria.</p>
+
+                <button class="buton smWidth">Add to Cart</button>
+                <button class="noner smWidth">Remove</button>
+                
+                <p class="money tooltip" price="300">&#8358;300<span class="tooltiptext">Price</span></p>
+
+            </div>
+
+            <div class="card">
+                <p class="cardTitle">Mango</p>
+
+                <div class="favStar tooltip">&#9734<span class="tooltiptext">pin to favorites</span></div>
+                <div class="none tooltip">&#9733<span class="tooltiptext">pinned</span></div>
+
+                <img src="mango.jpg" alt="picture of a Mango" class="myImage" id="orange">
+
+                <h4>Description:</h4>
+
+                <p class="para">A mango is a very sweet fruit usually grown within the shores of Nigeria.</p>
+
+                <button class="buton smWidth">Add to Cart</button>
+                <button class="noner smWidth">Remove</button>
+
+                <p class="money tooltip" price="70">&#8358;70<span class="tooltiptext">Price</span></p>
+
+            </div>
+
+            <div class= "card">
+                <p class="cardTitle">Banana</p>
+                <div class="favStar tooltip">&#9734<span class="tooltiptext">pin to favorites</span></div>
+                <div class="none tooltip">&#9733<span class="tooltiptext">pinned</span></div>
+                 
+                <img src="banana.jpg" alt="picture of a Banana" class="myImage">
+
+                <h4>Description:</h4>
+
+                <p class="para">A banana is a very sweet fruit usually grown within and outside the shores of Nigeria.</p>
+
+                <button class="buton smWidth">Add to Cart</button>
+                <button class="noner smWidth">Remove</button>
+
+                <p class="money tooltip" price="200">&#8358;200<span class="tooltiptext">Price</span></p>
+
+            </div>
+
+            <div class="card">
+                <p class="cardTitle">Tomato</p>
+
+                <div class="favStar tooltip">&#9734<span class="tooltiptext">pin to favorites</span></div>
+                <div class="none tooltip">&#9733<span class="tooltiptext">pinned</span></div>
+
+                <img src="tomato.jpg" alt="picture of an tomato" class="myImage apple">
+
+                <h4>Description:</h4>
+
+                <p class="para">A tomato is a very sweet vegetable usually grown within the shores of Nigeria.</p>
+
+                <button class="buton smWidth">Add to Cart</button>
+                <button class="noner smWidth">Remove</button>
+                
+                <p class="money tooltip" price="90">&#8358;90<span class="tooltiptext">Price</span></p>
+
+            </div>
+
+            <div class="card"> 
+                <p class="cardTitle">Onion</p>
+
+                <div class="favStar tooltip">&#9734<span class="tooltiptext">pin to favorites</span></div>
+                <div class="none tooltip">&#9733<span class="tooltiptext">pinned</span></div>
+
+                <img src="onion_1.jpg" alt="picture of an onion" class="myImage">
+
+                <h4>Description:</h4>
+
+                <p class="para">An onion is a vegetable usually grown within the shores of Nigeria.</p>
+
+                <button class="buton smWidth">Add to Cart</button>
+                <button class="noner smWidth">Remove</button>
+
+                <p class="money tooltip" price="65">&#8358;65<span class="tooltiptext">Price</span></p>
+
+            </div>
+
+            <div class= "card">
+                <p class="cardTitle">Cabbage</p>
+
+                <div class="favStar tooltip">&#9734<span class="tooltiptext">pin to favorites</span></div>
+                <div class="none tooltip">&#9733<span class="tooltiptext">pinned</span></div>
+                 
+                <img src="cabbage.jpg" alt="picture of an cabbage" class="myImage">
+
+                <h4>Description:</h4>
+
+                <p class="para">A cabbage is a tasty vegetable usually grown within and outside the shores of Nigeria.</p>
+
+                <button class="buton smWidth">Add to Cart</button>
+                <button class="noner smWidth">Remove</button>
+
+                <p class="money tooltip" price="110">&#8358;110<span class="tooltiptext">Price</span></p>
+
+            </div>
+
+            <div class="card">
+                <p class="cardTitle">Lettuce</p>
+
+                <div class="favStar tooltip">&#9734<span class="tooltiptext">pin to favorites</span></div>
+                <div class="none tooltip">&#9733<span class="tooltiptext">pinned</span></div>
+
+                <img src="lettuce.jpg" alt="picture of a Lettuce" class="myImage apple">
+
+                <h4>Description:</h4>
+
+                <p class="para">A lettuce is a vegetable usually grown within the shores of Nigeria.</p>
+
+                <button class="buton smWidth">Add to Cart</button>
+                <button class="noner smWidth">Remove</button>
+                
+                <p class="money tooltip" price="100">&#8358;100<span class="tooltiptext">Price</span></p>
+
+            </div>
+
+            <div class="card">
+                <p class="cardTitle">Okro</p>
+
+                <div class="favStar tooltip">&#9734<span class="tooltiptext">pin to favorites</span></div>
+                <div class="none tooltip">&#9733<span class="tooltiptext">pinned</span></div>
+
+                <img src="okro_2.jpg" alt="picture of an okro" class="myImage">
+
+                <h4>Description:</h4>
+
+                <p class="para">An okro is a vegetable usually grown within the shores of Nigeria.</p>
+
+                <button class="buton smWidth">Add to Cart</button>
+                <button class="noner smWidth">Remove</button>
+
+                <p class="money tooltip" price="50">&#8358;50<span class="tooltiptext">Price</span></p>
+
+            </div>
+
+            <div class= "card">
+                <p class="cardTitle">Green-peas</p>
+
+                <div class="favStar tooltip">&#9734<span class="tooltiptext">pin to favorites</span></div>
+                <div class="none tooltip">&#9733<span class="tooltiptext">pinned</span></div>
+                 
+                <img src="green_peas.jpg" alt="picture of a green-peas" class="myImage">
+
+                <h4>Description:</h4>
+
+                <p class="para">A green-peas is a vegetable usually grown within and outside the shores of Nigeria.</p>
+
+                <button class="buton smWidth">Add to Cart</button>
+                <button class="noner smWidth">Remove</button>
+
+                <p class="money tooltip" price="100">&#8358;100<span class="tooltiptext">Price</span></p>
+
+            </div>
+
+            <div class="card">
+                <p class="cardTitle">Chicken</p>
+
+                <div class="favStar tooltip">&#9734<span class="tooltiptext">pin to favorites</span></div>
+                <div class="none tooltip">&#9733<span class="tooltiptext">pinned</span></div>
+                
+
+                <img src="chicken.jpg" alt="picture of a Chicken" class="myImage apple">
+
+                <h4>Description:</h4>
+
+                <p class="para">A chicken is a livestock usually bred within the shores of Nigeria.</p>
+
+                <button class="buton smWidth">Add to Cart</button>
+                <button class="noner smWidth">Remove</button>
+                
+                <p class="money tooltip" price="3000">&#8358;3,000<span class="tooltiptext">Price</span></p>
+
+            </div>
+
+            <div class="card">
+                <p class="cardTitle">Cow</p>
+
+                <div class="favStar tooltip">&#9734<span class="tooltiptext">pin to favorites</span></div>
+                <div class="none tooltip">&#9733<span class="tooltiptext">pinned</span></div>
+
+                <img src="cow.jpg" alt="picture of a Cow" class="myImage">
+
+                <h4>Description:</h4>
+
+                <p class="para">A cow is a livestock usually bred within the shores of Nigeria.</p>
+
+                <button class="buton smWidth">Add to Cart</button>
+                <button class="noner smWidth">Remove</button>
+
+                <p class="money tooltip" price="165000">&#8358;165,000<span class="tooltiptext">Price</span></p>
+
+            </div>
+
+            <div class= "card">
+                <p class="cardTitle">Goat</p>
+
+                <div class="favStar tooltip">&#9734<span class="tooltiptext">pin to favorites</span></div>
+                <div class="none tooltip">&#9733<span class="tooltiptext">pinned</span></div>
+                 
+                <img src="goat.jpg" alt="picture of a goat" class="myImage" id="goat">
+
+                <h4>Description:</h4>
+
+                <p class="para">A goat is a livestock usually bred within and outside the shores of Nigeria.</p>
+
+                <button class="buton smWidth">Add to Cart</button>
+                <button class="noner smWidth">Remove</button>
+
+                <p class="money tooltip" price="18000">&#8358;18,000<span class="tooltiptext">Price</span></p>
+
+            </div>
+
+            <div class="card">
+                <p class="cardTitle">Ram</p>
+
+                <div class="favStar tooltip">&#9734<span class="tooltiptext">pin to favorites</span></div>
+                <div class="none tooltip">&#9733<span class="tooltiptext">pinned</span></div>
+                
+                <img src="ram.jpg" alt="picture of a ram" class="myImage apple">
+
+                <h4>Description:</h4>
+
+                <p class="para">A ram is a livestock usually bred within the shores of Nigeria.</p>
+
+                <button class="buton smWidth">Add to Cart</button>
+                <button class="noner smWidth">Remove</button>
+                
+                <p class="money tooltip" price="90000">&#8358;90,000<span class="tooltiptext">Price</span></p>
+
+            </div>
+
+            <div class="card">
+                <p class="cardTitle">Turkey</p>
+
+                <div class="favStar tooltip">&#9734<span class="tooltiptext">pin to favorites</span></div>
+                <div class="none tooltip">&#9733<span class="tooltiptext">pinned</span></div>
+
+                <img src="turkey.jpg" alt="picture of a turkey" class="myImage">
+
+                <h4>Description:</h4>
+
+                <p class="para">A turkey is a livestock usually bred within the shores of Nigeria.</p>
+
+                <button class="buton smWidth">Add to Cart</button>
+                <button class="noner smWidth">Remove</button>
+
+                <p class="money tooltip" price="15000">&#8358;15,000<span class="tooltiptext">Price</span></p>
+
+            </div>
+
+            <div class= "card">
+                <p class="cardTitle">Duck</p>
+
+                <div class="favStar tooltip">&#9734<span class="tooltiptext">pin to favorites</span></div>
+                <div class="none tooltip">&#9733<span class="tooltiptext">pinned</span></div>
+                 
+                <img src="duck.jpg" alt="picture of a duck" class="myImage">
+
+                <h4>Description:</h4>
+
+                <p class="para">A duck is a livestock usually bred within and outside the shores of Nigeria.</p>
+
+                <button class="buton smWidth">Add to Cart</button>
+                <button class="noner smWidth">Remove</button>
+
+                <p class="money tooltip" price="5000">&#8358;5,000<span class="tooltiptext">Price</span></p>
+
+            </div>
+        </div>
+
+       <script type="text/javascript" src="script.js"></script>
+
+       <script>
+           /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+       </script>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on the button, open the modal
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+
+        </script>
+
+
+    </body>
+</html>

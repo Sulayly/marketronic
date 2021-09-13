@@ -1,0 +1,725 @@
+/* check out fit-content very important later on */
+
+* {
+	background-color: /*#e3edf7*/  rgb(227, 233, 231);
+}
+
+@font-face {
+	font-family: 'Kuhlenbach Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Kuhlenbach Regular'), url('Kuhlenbach-VG0yZ.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Salacia Free Trial Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Salacia Free Trial Regular'), url('Salacia Free Trial.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'St Marie Thin';
+	font-style: normal;
+	font-weight: normal;
+	src: local('St Marie Thin'), url('StMarie-Thin.woff') format('woff');
+}
+
+.legnd {
+	letter-spacing: 6px;
+	font-family: /*'St Marie Thin'*/ serif;
+	font-size: 16px;
+	color: rgb(102, 201, 21);
+	background: black;
+	border-radius: 2px;
+	width: 200px;
+	height: 30px;
+	padding-top: 10px;
+	margin-right: 20px;
+	text-align: center;
+
+}
+
+#market {
+	background: transparent;
+	color: white;
+}
+
+header {
+	display: flex;
+	flex-wrap: wrap;
+	width: 101%;
+	height: 88px;
+	margin-left: -5px;
+	margin-top: -37px;
+	position: fixed;
+	padding-top: 12px;
+	justify-content: center;
+	letter-spacing: 5px;
+	font-family: 'Salacia Free Trial';
+	background-color: white;
+}
+
+.others {
+	background-color: transparent;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+svg {
+	/* font-size: 24px; */
+	background-color: transparent;
+}
+
+.banner {
+	margin-left: -12px;
+}
+
+.input {
+	width: /*450px*/200px;
+	height:40px;
+	outline: none;
+	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+	-6px -6px 10px -1px rgba(255, 255,255, 0.7);
+	border: 1px solid /*rgba(0,0,0,0)*/ gray;
+	background-color: whitesmoke;
+	border-radius: 6px;
+	padding-left: 8px;
+	margin-right: 6px;
+	margin-top: 17px;
+	font-family: 'Salacia Free Trial';
+	font-size: 16px;
+	letter-spacing: 2px;
+	color: black;
+
+}
+
+#search {
+	margin-right: 12px;
+	margin-top: 17px;
+}
+
+.navbar {
+	padding: 10px;
+	color: #555;
+	cursor: pointer;
+	background: transparent;
+}
+
+.buton {
+	display: inline;
+	width: 90px;
+	height: 40px;
+	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+	-6px -6px 10px -1px rgba(255, 255,255, 0.7);
+	border: 1px solid rgba(0,0,0,0);
+	border-radius: 6px;
+	outline: none;
+	background-color: rgb(102, 201, 21);
+	color: /*#e0113486, gold*/ white;
+	font-family: 'St Marie Thin' /*'Salacia Free Trial'*/;
+	letter-spacing: 1px;
+}
+
+.buton:hover {
+	box-shadow: inset  4px 4px 6px -1px rgba(0,0,0,0.2),
+				inset -4px -4px 6px -1px rgba(255, 255,255, 0.7),
+				-0.5px -0.5px 0px rgba(255, 255,255, 1),
+				0.5px 0.5px 0px  rgba(0, 0, 0, 0.15),
+				0px 12px 10px -10px  rgba(0, 0, 0, 0.05);
+	border: 1px solid rgba(0,0,0,0.1);
+	transform: translateY(1px);
+	cursor: pointer;
+	transform: scale(1.0);
+	transition: transform 0.5s;
+	font-size: 12px;
+	padding-top: 6px;
+	color: /*#4fce5d*/ white;
+}
+
+.done {
+	display: inline;
+	width: 90px;
+	height: 40px;
+	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+	-6px -6px 10px -1px rgba(255, 255,255, 0.7);
+	border: 1px solid rgba(0,0,0,0);
+	border-radius: 6px;
+	outline: none;
+	background-color: rgb(91, 126, 65)/*rgb(110, 112, 108) black*/;
+	color:  rgb(216, 211, 211);
+	font-family: 'St Marie Thin' /*'Salacia Free Trial'*/;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+.done:hover {
+	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+	-6px -6px 10px -1px rgba(255, 255,255, 0.7);
+	border: 1px solid rgba(0,0,0,0);
+	transform: translateY(1px);
+	transform: scale(1.0);
+	transition: transform 0.5s;
+	font-size: 12px;
+	padding-top: 6px;
+}
+
+.smWidth {
+	/* float: right; */
+	display: block;
+	/* width: 45px; */
+	margin-left: 8%;
+	font-size: 14px;
+	letter-spacing: 0px;
+	font-family: 'Salacia Free Trial Regular';
+}
+
+p {
+	display: inline-block;
+	background-color: transparent;
+	letter-spacing: normal;
+}
+
+.hove:hover {
+	color: yellowgreen;
+}
+
+.titles {
+	font-family: 'St Marie Thin';
+	font-size: 24px;
+	letter-spacing: 8px;
+	text-align: center;
+	/* text-align: left;
+	margin-left: 110px;
+	color: black; */
+}
+
+a {
+	margin-left: 10px;
+}
+
+a:link {
+	color: grey /*rgb(102, 201, 21)*/; 
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:visited {
+	color: gray;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(102, 201, 21);
+	background-color: transparent;
+	text-decoration:  none;
+}
+
+a:active {
+	color: rgb(102, 201, 21);
+	background-color: transparent;
+	text-decoration: none;
+}
+
+/* Tooltip container */
+.tooltip {
+	position: relative;
+	display: inline-block;
+	/*border-bottom: 1px dotted black;  If you want dots under the hoverable text */
+}
+  
+  /* Tooltip text */
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: /*6px*/ 3px;
+  
+	/* Position the tooltip text */
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -60px;
+  
+	/* Fade in tooltip */
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+  
+  /* Tooltip arrow */
+.tooltip .tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+
+.tooltiptext {
+	font-family: /*serif*/ 'Salacia Free Trial' /*'Kuhlenbach Regular'/* 'St Marie Thin'*/;
+	font-size: 16px;
+}
+
+sup {
+	background-color: transparent;
+	font-family: serif;
+}
+
+.card {
+	float: left;
+	width: 298px;
+	height: /*305*/ 390px;
+	background-color: /*#e3edf7*/ white;
+	margin-top: 2px;
+	margin-left: 8%;
+	margin-bottom: 30px;
+	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+	-6px -6px 10px -1px /*rgba(255, 255,255, 0.7)*/ rgba(0,0,0,0.15);
+	border: 1px solid rgba(0,0,0,0);
+	border-radius: /*24*/ 16px;
+}
+
+.cardTitle {
+	margin-left: 15px;
+	border: 2px solid /*rgb(201, 21, 111)*/ rgb(87, 85, 85);
+	border-radius: 1px;
+	padding: 4px;
+	/* width: 62px; */
+	width: 80px;
+	height: 18px;
+	background-color: /*rgb(201, 21, 111)*/rgb(87, 85, 85);
+	color: white;
+	text-align: center;
+}
+
+.favStar {
+	float: right;
+	margin-right: 15px;
+	margin-top: 10px;
+	font-size: 24px;
+	background-color: transparent;
+	color: gold;
+}
+
+.altfavStar {
+	float: right;
+	margin-right: 15px;
+	margin-top: 10px;
+	font-size: 24px;
+	background-color: transparent;
+	color: /*gold*/ red;
+}
+
+.favStar:hover {
+	/* background-color: #e3edf7; */
+	cursor: pointer;
+	/* border: 8px solid #e3edf7;
+	border-radius: 4px;
+	margin-right: 9px;
+	margin-top: 9px; */
+} 
+
+.myImage {
+	display: block;
+	margin-left: 20%;
+	margin-top: 12px;
+	width: 180px;
+	height: 130px;
+	/*border-radius: 53px 12px;*/
+	background-color: transparent /*rgb(238, 230, 230)*/;
+
+}
+
+.apple {
+	width: 130px;
+	margin-left: 25%;
+}
+
+h4 {
+	font-family: 'St Marie Thin';
+	background-color: transparent;
+	margin-left: 8%;
+	font-size: large;
+	color: grey;
+}
+
+.para {
+	background-color: transparent;
+	margin-top: -15px;
+	margin-left: 8%;
+	width: 200px;
+	color: rgb(102, 201, 21);
+}
+
+.money {
+	float: right;
+	margin-right: /*10%*/ 15px;
+	margin-top: -10%;
+	font-size: /*16px*/ 18px;
+	letter-spacing: 3px;
+	font-family: /*'Salacia Free Trial' 'Kuhlenbach Regular' 'St Marie Thin'*/ 'Salacia Free Trial';
+	color: /*green*/rgb(201, 21, 111);
+	
+}
+
+.none {
+	display: none;
+}
+
+.noner {
+	display: none;
+}
+
+.carts {
+	margin-left: 100px;
+	margin-top: 10px;
+	background: white;
+	border: 2px solid white;
+	/* border-radius: 8px; */
+	width: 300px;
+	height: 50px;
+	text-align: center;
+	color: yellowgreen;
+	padding-top: 40px;
+}
+
+.apimg {
+	width: 30px;
+	height: 30px;
+	margin-top: 2px;
+	margin-right: 12px;
+}
+
+
+/* Dropdown Button */
+/* .dropbtn {
+	background-color: #3498DB;
+	color: white; 
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+} */
+  
+/* Dropdown button on hover & focus */
+/* .dropbtn:hover, .dropbtn:focus {
+	background-color: #2980B9;
+} */
+  
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	/* background-color: #f1f1f1; */
+	background-color: white;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+  
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+  
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+	display: block;
+}
+
+.favBar {
+	font-size: 12px;
+	margin-left: -9px;
+}
+
+li {
+	background: white;
+	list-style-type: square;
+}
+
+img {
+	background: transparent;
+}
+
+  /* The Modal (background) */
+  .modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	border-radius: 6px;
+	width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+	background: transparent;
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color: /*black*/red;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+caption {
+	background: transparent;
+	padding: 10px;
+}
+
+.imgModal {
+	width: 35px;
+	height: 35px;
+}
+
+.modalInput {
+	outline-color: transparent;
+	outline-style: none;
+	border: 2px solid gray;
+	border-radius: 4px;
+	width: 40px;
+	padding: 10px;
+}
+
+table{
+	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+	-6px -6px 10px -1px /*rgba(255, 255,255, 0.7)*/ rgba(0,0,0,0.15);
+	border: 1px solid rgba(0,0,0,0);
+}
+
+table, th, td {
+	border-collapse: collapse;
+	background: white;
+}
+
+.tableClass {
+	text-align: center;
+}
+
+th, td {
+	padding: 15px;
+	border-right: 1px solid #ddd;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+}
+
+/* td {
+	border-bottom: 1px solid #ddd;
+} */
+
+table {
+	border-spacing: 5px;
+}
+
+.total {
+   text-align: right;
+}
+
+.totalCap {
+	border-bottom: 1px solid #ddd;
+}
+
+.modalInput {
+	background: white;
+	border-color: transparent;
+	border-bottom: 1px solid rgb(214, 213, 213);
+	text-align: center;
+}
+
+#cartCounter {
+	border: 1px solid rgb(102, 201, 21);
+	border-radius: 50%;
+	background: rgb(102, 201, 21);
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	color: white;
+	font-size: 10px;
+}
+
+.counting {
+	display: inline;
+}
+
+.noneCount {
+	display: none;
+}
+
+#totally {
+	display: flex;
+	margin-left: 42.5%; 
+	margin-top: 12px;
+	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+	-6px -6px 10px -1px /*rgba(255, 255,255, 0.7)*/ rgba(0,0,0,0.15);
+	border: 1px solid rgba(0,0,0,0);
+	background: white;
+}
+
+#pTotal {
+	width: 172.5px;
+	border-right: 1px solid rgb(211, 208, 208);
+	margin-left: 13%; 
+	letter-spacing: 6px;
+	background: transparent;
+	padding: 6px;
+}
+
+#total {
+	margin-left: 25%; 
+	letter-spacing: 6px;
+	background: transparent;
+	padding: 6px;
+}
+
+.hideTotal {
+	display: none;
+}
+
+.showTotal {
+	display: inline;
+}
+
+.cart_buton {
+	display: inline;
+	margin-left: 92%;
+	margin-top: 12px;
+	width: 90px;
+	height: 40px;
+	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+	-6px -6px 10px -1px rgba(255, 255,255, 0.7);
+	border: 1px solid rgba(0,0,0,0);
+	border-radius: 6px;
+	outline: none;
+	background-color: rgb(102, 201, 21);
+	color: /*#e0113486, gold*/ white;
+	font-family: /*'St Marie Thin'*/ 'Salacia Free Trial';
+	letter-spacing: 2px;
+}
+
+.cart_buton:hover {
+	box-shadow: inset  4px 4px 6px -1px rgba(0,0,0,0.2),
+				inset -4px -4px 6px -1px rgba(255, 255,255, 0.7),
+				-0.5px -0.5px 0px rgba(255, 255,255, 1),
+				0.5px 0.5px 0px  rgba(0, 0, 0, 0.15),
+				0px 12px 10px -10px  rgba(0, 0, 0, 0.05);
+	border: 1px solid rgba(0,0,0,0.1);
+	transform: translateY(1px);
+	cursor: pointer;
+	transform: scale(1.0);
+	transition: transform 0.5s;
+	font-size: 12px;
+	padding-top: 6px;
+	color: /*#4fce5d*/ white;
+	/* font-family: 'St Marie Thin'; */
+}
+
+.none_cart_buton {
+	display: none;
+}
+
+.end_process {
+	display: none;
+}
+
+.show_process {
+	display: block;
+	margin-left: 35%;
+	background: white;
+	color: /*green*/ rgb(102, 201, 21);
+}
+
+.end_buton {
+	display: inline;
+	margin-left: 92%;
+	margin-top: 12px;
+	width: 90px;
+	height: 40px;
+	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+	-6px -6px 10px -1px rgba(255, 255,255, 0.7);
+	border: 1px solid rgba(0,0,0,0);
+	border-radius: 6px;
+	outline: none;
+	background-color: /*rgb(102, 201, 21)*/ rgb(199, 47, 47);
+	color: white;
+	font-family: /*'St Marie Thin'*/ 'Salacia Free Trial'  ;
+	letter-spacing: 2px;
+}
+
+.end_buton:hover {
+	box-shadow: inset  4px 4px 6px -1px rgba(0,0,0,0.2),
+				inset -4px -4px 6px -1px rgba(255, 255,255, 0.7),
+				-0.5px -0.5px 0px rgba(255, 255,255, 1),
+				0.5px 0.5px 0px  rgba(0, 0, 0, 0.15),
+				0px 12px 10px -10px  rgba(0, 0, 0, 0.05);
+	border: 1px solid rgba(0,0,0,0.1);
+	transform: translateY(1px);
+	cursor: pointer;
+	transform: scale(1.0);
+	transition: transform 0.5s;
+	font-size: 12px;
+	padding-top: 6px;
+	color: /*#4fce5d*/ white;
+	/* font-family: 'St Marie Thin'; */
+}
+
+#orange {
+	width: 120px;
+	margin-left: 90px;
+}
+
+#goat {
+	width: 120px;
+	margin-left: 90px;
+}
+
+.cardParent {
+	margin: 35px;
+	padding-top: 100px;
+}
